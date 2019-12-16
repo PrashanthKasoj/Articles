@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Login Page</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="ste.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+  <style>body{
+    position: absolute;
+}
+.container .form-group{
+    height:460px;
+    width:400px;
+    position: relative;
+    left:300px;
+    top:100px;
+    border:2px solid grey;
+    padding:50px;
+    border-top-right-radius: 25px;
+    border-bottom-left-radius: 25px;
+    box-shadow: 0px 0px 20px solid black;
+    background-color: darkseagreen;
+}
+#btn{
+    position: relative;
+    left:60px;
+    height:50px;
+    width:100px;
+    box-shadow: 0 0 2px rgb(189, 85, 85);
+    border-radius: 30px;
+}
+</style>
+
+</head>
+<body id='ar'>
+    
+<div class="container">
+    
+
+    <form class="form-group" >
+         <div><img alt="Google" height="80" width="190" src="logo.png"></div>
+           <label for="email">Email/UserName:</label>
+            <input type="email" class="form-control" id="email"  name="email"><br>
+          <label for="pwd">Password:</label>
+            <input type="password" class="form-control" id="pwd"  name="pswd">
+      <div class="form-check">
+          <label class="form-check-label">
+            <input class="form-check-input" type="checkbox" name="remember"> Remember me
+          </label>
+      </div>
+     <div>
+       <a href="forgot.html">Forgot Password?</a></div>
+      <div> <a href="Reg.html">New User</a></div>
+        <button type="submit" class="btn btn-primary" id="btn">Submit</button>
+    </form>
+</div>
+
+</body>
+</html>

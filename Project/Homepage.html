@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+
+<head>
+     <meta name="viewport" content="width=device-width,initial-scale=1.0"> 
+     <meta charset="UTF-8">
+    <title>HomePage</title>
+    <link rel="stylesheet" href="bootstrap.css">
+    <link rel="stylesheet" href="styles.css">
+    <script type="text/javascript" 
+    src="https://www.gstatic.com/charts/loader.js"></script>
+
+</head>
+
+<body class="containe">
+    <div class="topnav">
+          <div class="topnav-items">
+             <img src="lord.jpg" class="main-img" alt="">
+               <select name="" class="dd">
+                 <option value="account">Account</option>
+                 <option value="changepwd">ChangePassword</option>
+                 <option value="logout">Logout</option>
+               </select>
+        </div>
+            <div>
+            <span id="hea">Software Solutions</span>
+             <span id="sp" onclick="openNav()">
+              <div class="bar1"></div>
+               <div class="bar2"></div>
+               <div class="bar3"></div>
+             </span>
+            </div>
+     </div>
+    
+   
+        <aside class="sidenav" id="Sidenav">
+            <a href="javascript:void(0)" class="closebtn"
+            onclick="closeNav()">&times;</a>
+            <a href="#">Manage Users</a>
+            <a href="#">Manage Articles </a>
+            <a href="#">Manage Categories</a>
+            <a href="#">Manage </a>
+        </aside>
+        <section>
+            <div class="container col-md-4" id="piechart"></div> 
+        </section>
+   <footer class="foot">
+        
+         <p>Powered by @XYZ.com</p>
+         <p>Copy Rights &copy; 2019</p>
+   </footer>
+    
+
+</body>
+<script>
+    google.charts.load('current', {'packages':['corechart']});
+google.charts.setOnLoadCallback(drawChart);
+function drawChart() {
+  var data = google.visualization.arrayToDataTable([
+  ['Task', 'Hours per Day'],
+  ['10-15:age', 20],
+  ['15-20:age', 30],
+  ['20-25:age', 40],
+  ['25-30:age', 45],
+  ['30-35:age', 55],
+  ['35-100:age',50]
+]);
+var options = {'title':'User Stats', 'width':350, 'height':300};
+var chart = new google.visualization.PieChart(document.getElementById('piechart'));
+  chart.draw(data, options);}
+    function openNav() { 
+        document.getElementById("Sidenav").style.width = "30%";
+    }
+
+
+    function closeNav() {
+        document.getElementById("Sidenav").style.width = "0";
+    }
+
+</script>
