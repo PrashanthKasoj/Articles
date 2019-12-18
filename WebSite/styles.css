@@ -1,0 +1,69 @@
+/*Side Nav*/
+.sidenav{
+    height:100%;
+    background:linear-gradient(45deg,red,black);
+    overflow-x: hidden;
+    width:0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    padding-top: 60px;
+    transition: 0.5s;
+} /*Side Nav Elements*/
+.sidenav a{
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color:white;
+    display: block;
+    transition: 0.3s;
+}
+/*****sidenav hover**/
+.sidenav  a:hover{
+    color:grey;
+    text-decoration: none;
+}
+/***Close button**/
+.sidenav .closebtn{
+position: absolute;
+top:0;
+right:20px;
+font-size: 36px;
+margin-left: 50px;
+color:white
+}
+ span .bar1, .bar2, .bar3 {
+    width: 35px;
+    height: 5px;
+    background-color:white;
+    margin: 6px 5px;
+ }
+ /*footer*/
+ .foot{
+     width:100%;
+     background:linear-gradient(45deg,black,red); 
+     position: absolute;
+     display: block;
+     bottom:0;
+    text-align: center;
+     color:white;
+     height:60px;
+     margin:0;
+ }
+ .foot p{
+     margin:0;
+ }
+ .navbar-brand{
+     font-weight: bold;
+     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+     font-size: 20px;
+ }
+  
+  
+  
+
+  
+  
+  
+ 

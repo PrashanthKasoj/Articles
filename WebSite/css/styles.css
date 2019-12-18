@@ -1,0 +1,6 @@
+.bg-danger{
+    background: linear-gradient(45deg,black,orangered);
+}
+.btn-primary{
+    background: linear-gradient(45deg,black,cornflowerblue);
+}
